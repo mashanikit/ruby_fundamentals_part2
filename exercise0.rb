@@ -96,9 +96,19 @@ end
 
 
 
-
 # Print out all of the ages of your friends/family that are less than 30 (or any number where some ages will not be printed!).
 # Find and output the age of the oldest person in your friends/family array.
 # Count how many times you flipped 'heads' using the coin flips array.
 # You realize one of the performing artists in your list is no longer a favourite. Remove one of them from the array.
 # Pick a city in your city population hash and change its population.
+
+puts age.select { |num| num < 30}
+
+puts age.sort.last
+
+puts coin.count("heads")
+
+artists.delete("basshunter")
+
+cities[:paris] = "15 million"
+puts cities 
