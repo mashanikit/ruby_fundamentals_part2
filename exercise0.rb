@@ -40,3 +40,17 @@ siblings_cousins_friends = {
   :ronen => {:age => 33, :relationship => "friend" },
   :daria => {:age => 12, :relationship => "cousin"}
 }
+
+puts coin
+puts fav_colours[0]
+puts age.sort
+
+age << 0
+
+puts movies[:requiem_for_a_dream]
+
+
+
+
+
+# Using the hash of movie information, access and print the year of one of the movies.
