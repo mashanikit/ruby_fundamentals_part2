@@ -30,9 +30,9 @@ movies = {
 }
 
 cities = {
-  :moscow => "12.4 million",
-  :paris => "2 million",
-  :new_york => "8.5 million"
+  :moscow => 12400000,
+  :paris => 2000000,
+  :new_york => 8500000
 }
 
 siblings_cousins_friends = {
@@ -61,7 +61,7 @@ puts movies[:requiem_for_a_dream]
 
 puts fav_colours.last
 
-cities[:tokyo] = "13 million"
+cities[:tokyo] = 13000000
 [coin].reverse
 puts coin.reverse
 
@@ -110,5 +110,32 @@ puts coin.count("heads")
 
 artists.delete("basshunter")
 
-cities[:paris] = "15 million"
-puts cities 
+cities[:paris] = 15000000
+
+# Find the sum total of the population in the hash of cities.
+# Using your hash containing the names of your family and friends with their ages, print out one of two messages for each depending on their age. For example:
+# Martha is old.
+# Stewart is young.
+# Holly is young.
+# Print out the last two colours in your array of favourite colours.
+# Increase by 1 the age of everyone in your array of ages. Print it out.
+# Add two new colours to your array of favourite colours.
+
+puts cities.values.sum
+
+siblings_cousins_friends.each do |key, value|
+  aged = value[:age]
+  if aged > 20
+    puts "#{key} is old"
+  elsif aged < 20
+    puts "#{key} is young"
+  end
+end
+
+puts fav_colours.last(2)
+
+age.each do |age|
+  puts age + 1
+end
+
+fav_colours.push("red", "coral")
