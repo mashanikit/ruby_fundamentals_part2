@@ -9,7 +9,7 @@
 fav_colours = ["black", "grey", "blue", "white"]
 age = [21, 37, 7, 27]
 coin = ["heads", "tails", "heads", "heads", "tails"]
-artist = ["the beatles", "basshunter", "matchbox twenty"]
+artists = ["the beatles", "basshunter", "matchbox twenty"]
 fav_colours_symbols = [:black, :grey, :blue, :white]
 
 # three words and their definitions
@@ -49,8 +49,24 @@ age << 0
 
 puts movies[:requiem_for_a_dream]
 
+# Print out the last element of the array of your favourite colours.
+# Note: this should work for an array of any size!
+# Add a new city to the hash of cities and population.
+# Reverse the array of coin flips and save it.
+# Print out the population of one of the cities.
+# Print out a sentence about each item in the array of performing artists. For example:
+# I think Pearl Jam is great.
+# I think Lady Gaga is great.
+# I think Pink Floyd is great.
 
+puts fav_colours.last
 
+cities[:tokyo] = "13 million"
+[coin].reverse
+puts coin.reverse
 
+puts cities[:moscow]
 
-# Using the hash of movie information, access and print the year of one of the movies.
+artists.each do |artist|
+  puts "#{artist} is great"
+end
