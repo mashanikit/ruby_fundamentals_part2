@@ -162,7 +162,7 @@ phone_buttons = [[1,2,3],
                 ['*', 0, '#']]
 
 country = [
-  {:name => "Canada", :continent => "North America", :island: "Not"},
+  {:name => "Canada", :continent => "North America", :island => "Not"},
   {:name => "United States", :continent => "North America", :island => "Not"},
   {:name => "Russia", :continent => "Europe", :island => "Not"},
   {:name => "Australia", :continent => "Australia", :island => "Yes"}
@@ -175,3 +175,40 @@ country = [
 # Create a new array which has three of each number up to 50.
 # Ie. [1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50] and so on, up to 50.
 # Make a new array out all of the countries from the hash in Exercise 6 that are not islands. Print out both arrays.
+
+20.times do
+  puts "I will not skateboard in the halls"
+end
+
+skateboard = Array.new(20, "I will not skateboard in the halls")
+
+#bart = []
+#20.times do
+# bart << "I will not skateboard in the halls"
+# end
+
+
+my_array = (1..50).to_a
+  print my_array
+
+print my_array.sum
+
+my_arrayx3 = []
+50.times do |i|
+    3.times do
+      my_arrayx3 << i
+    end
+end
+print my_arrayx3
+puts '              '
+# country_array = ["Canada", "United States", "Russia"]
+#  puts country_array
+# print country
+
+country.each do |c|
+  if c[:island] == "Not"
+    puts c[:name]
+  end
+end
+
+print country
